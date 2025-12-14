@@ -1,0 +1,415 @@
+/* Общие стили для всей страницы */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Основной контейнер */
+.container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    min-height: 90vh;
+    overflow: hidden;
+}
+
+/* Левая панель */
+.left-panel {
+    width: 300px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+}
+
+.panel-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.icon-big {
+    font-size: 28px;
+    color: #3498db;
+    margin-right: 15px;
+}
+
+.panel-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Меню */
+.menu-box {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.menu-section {
+    margin-bottom: 15px;
+}
+
+.menu-header {
+    display: flex;
+    align-items: center;
+}
+
+.menu-button {
+    background-color: transparent;
+    border: none;
+    color: #3498db;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    color: #ecf0f1;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.05);
+    flex-grow: 1;
+}
+
+.menu-item:hover {
+    background-color: rgba(52, 152, 219, 0.2);
+}
+
+.menu-item i {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+/* Подменю */
+.submenu {
+    padding-left: 30px;
+    margin-top: 5px;
+    display: none;
+}
+
+.submenu-section {
+    margin-bottom: 10px;
+}
+
+.submenu-header {
+    display: flex;
+    align-items: center;
+}
+
+.submenu-items {
+    padding-left: 40px;
+    margin-top: 5px;
+}
+
+.file-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    color: #ecf0f1;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.file-item:hover {
+    background-color: rgba(52, 152, 219, 0.2);
+}
+
+.file-item i {
+    margin-right: 10px;
+    font-size: 14px;
+    color: #3498db;
+}
+
+/* Правая панель */
+.right-panel {
+    flex-grow: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Верхняя шапка */
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eeeeee;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    font-size: 36px;
+    color: #3498db;
+    margin-right: 15px;
+}
+
+.main-title {
+    font-size: 28px;
+    color: #2c3e50;
+    font-weight: 700;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.action-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.action-button:hover {
+    background-color: #2980b9;
+}
+
+.action-button i {
+    margin-right: 8px;
+}
+
+/* Область загрузки */
+.upload-area {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border: 3px dashed #3498db;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload-icon-area {
+    margin-bottom: 20px;
+}
+
+.big-icon {
+    font-size: 70px;
+    color: #3498db;
+}
+
+.upload-title {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.upload-text {
+    font-size: 16px;
+    color: #7f8c8d;
+    max-width: 500px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.upload-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.upload-button:hover {
+    background-color: #2980b9;
+}
+
+.upload-button i {
+    margin-right: 10px;
+}
+
+.file-input {
+    display: none;
+}
+
+/* Область просмотра XML */
+.xml-viewer-area {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #dddddd;
+    display: none;
+}
+
+.viewer-header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.viewer-title-area {
+    display: flex;
+    align-items: center;
+}
+
+.viewer-title-area i {
+    font-size: 20px;
+    color: #3498db;
+    margin-right: 10px;
+}
+
+.viewer-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.viewer-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.viewer-button {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.viewer-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.viewer-button i {
+    margin-right: 8px;
+}
+
+.xml-content {
+    flex-grow: 1;
+    padding: 25px;
+    overflow: auto;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    line-height: 1.6;
+}
+
+.empty-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 18px;
+    color: #7f8c8d;
+}
+
+.empty-message i {
+    margin-right: 10px;
+    font-size: 24px;
+    color: #3498db;
+}
+
+/* Стили для скроллбара */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3498db;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #2980b9;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .left-panel {
+        width: 100%;
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .header-buttons {
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .main-title {
+        font-size: 22px;
+    }
+    
+    .upload-area {
+        padding: 20px;
+    }
+    
+    .big-icon {
+        font-size: 50px;
+    }
+    
+    .upload-title {
+        font-size: 20px;
+    }
+    
+    body {
+        padding: 10px;
+    }
+}
