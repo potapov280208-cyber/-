@@ -403,3 +403,35 @@ body {
         padding: 10px;
     }
 }
+
+.xml-tag {
+    color: #569cd6;
+}
+
+.xml-attr {
+    color: #9cdcfe;
+}
+
+.xml-value {
+    color: #ce9178;
+}
+
+.xml-comment {
+    color: #6a9955;
+    font-style: italic;
+}
+
+.error-message {
+    color: #f14c4c;
+    font-size: 16px;
+}
+
+.error-message i {
+    color: #f14c4c;
+    margin-right: 10px;
+}
+
+.active {
+    background-color: rgba(52, 152, 219, 0.3) !important;
+    border-left: 3px solid #3498db;
+}
