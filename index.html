@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Просмотрщик файлов</title>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -108,11 +107,11 @@
                 </div>
                 
                 <div class="header-buttons">
-                    <button class="action-button">
+                    <button class="action-button" id="uploadBtn">
                         <i class="fas fa-upload"></i>
                         <span>Загрузить файл</span>
                     </button>
-                    <button class="action-button">
+                    <button class="action-button" id="showExampleBtn">
                         <i class="fas fa-eye"></i>
                         <span>Показать пример</span>
                     </button>
@@ -127,9 +126,12 @@
                 
                 <h3 class="upload-title">Перетащите сюда файлы</h3>
                 
-               
+                <p class="upload-text">
+                    Поддерживаются: XML, XSD, ZIP, изображения (JPG, PNG, GIF), 
+                    PDF, текстовые файлы (TXT, JSON, HTML, CSS, JS)
+                </p>
                 
-                <button class="upload-button">
+                <button class="upload-button" id="selectFileBtn">
                     <i class="fas fa-folder-open"></i>
                     <span>Нажмите чтобы выбрать файлы</span>
                 </button>
@@ -147,22 +149,25 @@
                     </div>
                     
                     <div class="viewer-buttons">
-                        <button class="viewer-button">
+                        <button class="viewer-button" id="closeViewerBtn">
                             <i class="fas fa-times"></i>
                             <span>Закрыть</span>
                         </button>
-                        <button class="viewer-button">
+                        <button class="viewer-button" id="downloadFileBtn">
                             <i class="fas fa-download"></i>
                             <span>Скачать</span>
                         </button>
                     </div>
                 </div>
                 
-                <div class="xml-content" id="xmlContent">
-                    <p class="empty-message">
-                        <i class="fas fa-info-circle"></i>
-                        Выберите или перетащите XML файл для просмотра
-                    </p>
+                <div class="viewer-container" id="viewerContainer">
+                    <div class="xml-content" id="xmlContent">
+                        <p class="empty-message">
+                            <i class="fas fa-info-circle"></i>
+                            Выберите или перетащите файл для просмотра
+                        </p>
+                    </div>
+
                 </div>
                 
             </div>
@@ -170,6 +175,8 @@
         </div>
         
     </div>
-    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
